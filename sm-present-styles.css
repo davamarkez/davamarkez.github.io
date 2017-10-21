@@ -1,0 +1,118 @@
+/* First screen */
+
+.first-screen {
+  margin-top: -5%;
+  color: #424242;
+  background-color: #1de9b6;
+  transform: skewY(-5deg);
+  overflow: hidden;
+}
+
+.first-screen .wrapper-unskew {
+  position: relative;
+  transform: skewY(5deg);
+}
+
+.first-screen .wrapper-unskew::before,
+.first-screen .wrapper-unskew::after {
+  content: '';
+  position: absolute;
+  max-width: 453px;
+  width: 30%;
+  height: 100%;
+  z-index: 1;
+  background-image: url('img/sm/sm_first_screen_pattern.png');
+  background-repeat: repeat-y;
+  background-size: contain;
+}
+
+.first-screen .wrapper-unskew::before {
+  top: 0;
+  left: -7%;
+  background-position: left top;
+}
+
+.first-screen .wrapper-unskew::after {
+  top: 0;
+  right: -7%;
+  background-position: right top;
+}
+
+.first-screen .container {
+  padding-top: 12%;
+  padding-bottom: 50%;
+}
+
+/* Content */
+
+div.image-with-header::before {
+  background-image: url('img/sm/sm_browser_head.png');
+}
+
+.sm-first-screen-invader {
+  position: relative;
+  color: #424242;
+  margin-top: -50%;
+  text-align: center;
+}
+
+.sm-first-screen-invader h2 {
+  margin-bottom: 0;
+}
+
+img[src="img/sm/sm_icons.png"] {
+  max-width: 1153px;
+  margin: 0 auto;
+}
+
+.sm-manage-mobile {
+  position: relative;
+}
+
+.sm-manage-mobile > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 41.9%;
+  margin-top: -36.8%;
+  z-index: 1;
+}
+
+p.sm-manage-mobile-to-left {
+  width: 57.5%;
+  margin-top: 30%;
+  margin-bottom: 4.4%;
+}
+
+div.sm-with-stripes {
+  width: 100%;
+  position: relative;
+}
+
+div.sm-with-stripes::before,
+div.sm-with-stripes::after {
+  content: '';
+  position: absolute;
+  max-width: 872px;
+  width: 63.8%;
+  height: 100%;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+div.sm-with-stripes::before {
+  top: 0;
+  right: 56.4%;
+  margin-top: 20.1%;
+  background-image: url('img/sm/sm_left_stripe.png');
+  background-position: right top;
+}
+
+div.sm-with-stripes::after {
+  top: 0;
+  left: 56.4%;
+  margin-top: 16.8%;
+  background-image: url('img/sm/sm_right_stripe.png');
+  background-position: left top;
+}

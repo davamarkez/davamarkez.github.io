@@ -1,0 +1,73 @@
+/* First screen */
+
+.first-screen {
+  background:
+    url('img/onre/onre_fs_pattern_flipped.jpg') repeat-y,
+    url('img/onre/onre_fs_bg.jpg') no-repeat,
+    url('img/onre/onre_fs_pattern.jpg') repeat-y;
+  background-position: right top, left bottom, left top;
+
+  background-color: #607d8b;
+}
+
+div.image-with-header::before {
+  background-image: url('img/onre/onre_browser_head.png');
+}
+
+.onre-catalog-card-features img {
+  position: relative;
+  left: 6.8%;
+  width: 62%;
+}
+
+.onre-catalog-card-features p {
+  float: right;
+  width: 32%;
+  margin: 0;
+  padding-top: 16.5%;
+}
+
+.onre-catalog-cart {
+  position: relative;
+  margin-top: 10%;
+  margin-bottom: 6.6%;
+}
+
+.onre-catalog-cart p {
+  width: 62.5%;
+  margin: 0;
+  margin-bottom: 2.2%;
+}
+
+.onre-catalog-cart img.onre-hand-phone {
+  position: absolute;
+  width: 68%;
+  top: -10%;
+  left: 66%;
+}
+
+.onre-smm {
+  background: #edeef0;
+  color: #424242;
+  border-top: 1px solid transparent;
+}
+
+.onre-smm .smm-columns {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0 1%;
+}
+
+.onre-smm .smm-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 1%;
+}
+
+.onre-smm img {
+  width: 100%;
+  max-width: 556px;
+  margin-bottom: 1%;
+}

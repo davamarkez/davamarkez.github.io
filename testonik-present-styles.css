@@ -1,0 +1,238 @@
+/* First screen */
+
+.first-screen {
+  color: #424242;
+  background: #e8eaf6;
+  height: auto;
+}
+
+.first-screen .container {
+  position: relative;
+  height: 100%;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.first-screen .container::after {
+  width: 100%;
+  max-width: 1365px;
+  margin-top: 5%;
+  padding-top: 21%;
+  z-index: 0;
+  content: '';
+  background: url('img/testonik/testonik_first_screen_bg.png') no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-origin: padding-box;
+  border: 1px solid transparent;
+  border-image:
+    linear-gradient(90deg, #e8eaf6, #c5cae9 10%, #c5cae9 90%, #e8eaf6);
+  border-image-slice: 1;
+}
+
+/* Content */
+
+div.image-with-header::before {
+  background-image: url('img/testonik/testonik_browser_head.png');
+}
+
+
+/* Icons */
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 7%;
+  align-items: baseline;
+}
+
+.icons div {
+  flex: 1;
+}
+
+.icons img {
+  display: block;
+  margin: 0 auto;
+}
+
+.icons div:nth-child(1) img {
+  width: 38.7%;
+  max-width: 132px;
+}
+
+.icons div:nth-child(2) img {
+  width: 41%;
+  max-width: 140px;
+}
+
+.icons div:nth-child(3) img {
+  width: 35.1%;
+  max-width: 120px;
+}
+
+.icons div:nth-child(4) img {
+  width: 42.4%;
+  max-width: 144px;
+}
+
+.icons p {
+  width: 80%;
+  margin: 7% auto;
+  text-align: center;
+}
+
+
+div.activity-buttons {
+  margin-top: 8%;
+  margin-bottom: 4.4%;
+}
+
+div.activity-buttons p {
+  float: left;
+  width: 21.5%;
+  padding-top: 9%;
+  margin: 0;
+}
+
+div.activity-buttons img {
+  float: left;
+  width: 78.5%;
+}
+
+/* Activity icons */
+
+div[class^="h2-with-p activity-"] {
+  position: relative;
+  margin-top: 20%;
+}
+
+div[class^="h2-with-p activity-"]::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 0;
+  background-repeat: no-repeat;
+  background-position: 12% 0;
+  background-origin: padding-box;
+  background-size: contain;
+  z-index: -1;
+}
+
+div.activity-cards::before {
+  background-image: url('img/testonik/testonik_cards_activity_icon.png');
+  padding-top: 29.7%;
+  margin-top: -16%;
+}
+
+div.activity-time::before {
+  background-image: url('img/testonik/testonik_time_activity_icon.png');
+  padding-top: 29.5%;
+  margin-top: -13%;
+}
+
+div.activity-test::before {
+  background-image: url('img/testonik/testonik_test_activity_icon.png');
+  padding-top: 42.4%;
+  margin-top: -16%;
+  background-position: 0 0;
+}
+
+div.activity-couples::before {
+  background-image: url('img/testonik/testonik_couples_activity_icon.png');
+  padding-top: 22.3%;
+  margin-top: -13%;
+}
+
+
+/* Animations */
+
+.animations {
+  background-color: #fff;
+  color: #424242;
+}
+
+.animations .container {
+  display: flex;
+  flex-direction: row;
+}
+
+.animations .new-life {
+  flex: 62.5;
+  position: relative;
+}
+
+.animations .left-col {
+  flex: 37.5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.animations .in-game,
+.animations .after-death {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.animations .in-game img,
+.animations .after-death img {
+  width: 15%;
+  max-width: 60px;
+}
+
+.animations .new-life img {
+  width: 100%;
+}
+
+.animations p {
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.animations .new-life p {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+
+/* Content */
+
+.activity-time-results p {
+  float: left;
+  width: 37.5%;
+  margin-top: 6%;
+}
+
+.activity-time-results img {
+  float: left;
+  width: 62.5%;
+}
+
+.activity-couples-results p {
+  float: left;
+  width: 37.5%;
+  margin-top: 25%;
+}
+
+.activity-couples-results img {
+  float: left;
+  width: 62.5%;
+}
+
+img.laptop-full-width {
+  position: relative;
+  display: block;
+  width: 130.5%;
+  margin-left: -15.2%;
+  margin-top: -4.6%;
+}

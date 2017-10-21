@@ -1,0 +1,119 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Pt Sans", "Helvetica", sans-serif;
+  font-size: 15px;
+  color: #fff;
+  background: #424242;  
+}
+
+.container {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+.portfolio-grid {
+  font-size: 0;
+}
+
+.portfolio-grid .item {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #424242;
+
+}
+
+@media (min-width: 500px) {
+  .portfolio-grid .item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 700px) {
+  .portfolio-grid .item {
+    width: 33.3%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .portfolio-grid .item {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .portfolio-grid .item {
+    width: 20%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .portfolio-grid .item {
+    width: 16.6%;
+  }
+}
+
+.portfolio-grid .item::before {
+  content: '';
+  display: block;
+  padding-top: 133.3%;
+}
+
+.portfolio-grid .item .content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 7%;
+  color: #212121;
+  text-align: center;
+}
+
+.portfolio-grid .item.inverted-colors .content {
+  color: #fff;
+}
+
+.portfolio-grid .item .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.portfolio-grid .item .title {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.portfolio-grid .item .description {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 13px;
+  opacity: 0.5;
+}
+
+.portfolio-grid .item a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.portfolio-grid .item a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-grid .item.inverted-colors a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}

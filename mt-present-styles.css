@@ -1,0 +1,176 @@
+/* First screen */
+
+.first-screen {
+  color: #424242;
+  background-color: #fdfaf5;
+}
+
+
+/* Content */
+
+img.mt-laptop-mini {
+  display: block;
+  max-width: 1460px;
+  width: 106.9%;
+  margin-top: -11%;
+  margin-left: -3.22%;
+}
+
+div.image-with-header::before {
+  background-image: url('img/mt/mt_browser_head.png');
+}
+
+div.mt-with-reviews {
+  width: 100%;
+  position: relative;
+}
+
+div.mt-with-reviews::before,
+div.mt-with-reviews::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  max-width: 680px;
+  width: 49.8%;
+  height: 100%;
+  margin-top: 142.2%;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+div.mt-with-reviews::before {
+  right: 72.84%;
+  background-image: url('img/mt/mt_review_left.png');
+  background-position: right top;
+}
+
+div.mt-with-reviews::after {
+  left: 72.84%;
+  background-image: url('img/mt/mt_review_right.png');
+  background-position: left top;
+}
+
+.mt-schedule-dd {
+  width: 100%;
+  position: relative;
+}
+
+.mt-schedule-dd p {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 35%;
+  width: 25%;
+}
+
+.mt-schedule-dd img {
+  width: 104.9%;
+  max-width: 1433px;
+  margin-left: -2.5%;
+}
+
+.mt-card-explain img {
+  width: 118.9%;
+  max-width: 1624px;
+  margin-left: -5.2%;
+}
+
+.mt-card-explain p,
+.mt-cards-compare > p {
+  width: 26.4%;
+  margin-left: 23.86%;
+}
+
+.mt-cards-compare div {
+  float: right;
+  width: 22.1%;
+}
+
+.mt-cards-compare div:last-of-type {
+  margin-right: 3.2%;
+}
+
+.mt-cards-compare div img {
+  max-width: 302px;
+  width: 100%;
+}
+
+ul.list-with-dashes {
+  float: right;
+  width: 62.5%;
+  margin: 0;
+}
+
+.mt-awards {
+  padding-top: 4.4%;
+  color: #424242;
+  background: #bdbdbd;
+}
+/*
+.mt-awards .container div:first-of-type {
+  float: left;
+  width: 20%;
+}
+*/
+.mt-awards div[class^="awards-"] {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 4.4%;
+}
+
+.mt-awards div[class^="awards-"] div {
+  margin-right: 1%;
+}
+
+.mt-awards div[class^="awards-"] div:last-of-type {
+  margin-right: 0;
+}
+
+.mt-awards div.awards-student-1,
+.mt-awards div.awards-student-3 {
+  justify-content: flex-end;
+}
+
+.mt-awards div.awards-student-2,
+.mt-awards div.awards-curator {
+  justify-content: flex-start;
+}
+
+.mt-awards div[class^="awards-"] .img-vert {
+  flex-basis: 22%;
+}
+
+.mt-awards div[class^="awards-"] .img-hor {
+  flex-basis: 31%;
+}
+
+.mt-awards div[class^="awards-"] img {
+  width: 100%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.mt-awards div.awards-student-1 div {
+  flex-shrink: 0;
+}
+
+.mt-awards div.awards-student-1 div:first-of-type {
+  flex-shrink: 1;
+  padding-right: 3%;
+}
+
+.mt-awards div.awards-student-1 h2 {
+  margin: 0;
+  margin-top: -3%;
+}
+
+.mt-awards div.awards-curator div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mt-awards div.awards-curator p {
+  margin-top: -2%;
+}

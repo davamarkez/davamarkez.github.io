@@ -1,0 +1,86 @@
+/* First screen */
+
+.first-screen {
+  color: #fff;
+  background-color: #779da1;
+  background-image:
+    url('img/mt/mt_first_scr_bg_1.png'),
+    url('img/mt/mt_first_scr_bg_2.png'),
+    linear-gradient(to bottom, #5d9bb9, #889f90);
+  background-repeat: no-repeat;
+  background-size: 25%, 33%, auto;
+  background-position:
+    left 10%,
+    right 110%;
+}
+
+/* Content */
+
+.block-75-percent {
+  float: left;
+  width: 75%;
+}
+
+.block-75-percent img {
+  width: 100%;
+}
+
+.landing-new-season .block-75-percent img {
+  width: 130%;
+  margin-left: -15%;
+}
+
+.landing-teachers {
+  position: relative;
+}
+
+.landing-teachers::before {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 0;
+  padding-top: 50%;
+  background: url('img/mt/mt-landing-teachers-bg.png') no-repeat;
+  background-position: right top;
+  background-origin: padding-box;
+  background-size: contain;
+}
+
+div.image-with-header::before {
+  background-image: url('img/mt/mt_browser_head.png');
+}
+
+/* Side remarks */
+
+.block-25-percent {
+  position: relative;
+  float: left;
+  width: 25%;
+}
+
+.block-25-percent div {
+  position: absolute;
+  margin-left: 10%;
+}
+
+.block-25-percent p {
+  margin-top: 0;
+}
+
+.block-25-percent img {
+  width: 100%;
+}
+
+.block-25-percent div.remark-1 {
+  margin-top: 239%;
+}
+
+.block-25-percent div.remark-2 {
+  margin-top: 545%;
+}
+
+.block-25-percent div.remark-3 {
+  margin-top: 761%;
+}

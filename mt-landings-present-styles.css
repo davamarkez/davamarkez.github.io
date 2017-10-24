@@ -1,7 +1,6 @@
 /* First screen */
 
 .first-screen {
-  color: #fff;
   background-color: #779da1;
   background-image:
     url('img/mt/mt_first_scr_bg_1.png'),
@@ -12,6 +11,17 @@
   background-position:
     left 10%,
     right 110%;
+}
+
+.first-screen .logo {
+  width: 18.12%;
+  height: auto;
+  max-width: 165px;
+}
+
+.first-screen a {
+  color: #99bfff;
+  border-bottom: 1px solid rgba(153, 191, 255, 0.25);
 }
 
 /* Content */

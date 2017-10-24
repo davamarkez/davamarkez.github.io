@@ -10,6 +10,17 @@
   background-color: #607d8b;
 }
 
+.first-screen a {
+  color: #99bfff;
+  border-bottom: 1px solid rgba(153, 191, 255, 0.25);
+}
+
+.first-screen .logo {
+  width: 31.74%;
+  height: auto;
+  max-width: 289px;
+}
+
 div.image-with-header::before {
   background-image: url('img/onre/onre_browser_head.png');
 }
@@ -50,6 +61,7 @@ div.image-with-header::before {
   background: #edeef0;
   color: #424242;
   border-top: 1px solid transparent;
+  padding-bottom: 4.4%;
 }
 
 .onre-smm .smm-columns {
@@ -70,4 +82,8 @@ div.image-with-header::before {
   width: 100%;
   max-width: 556px;
   margin-bottom: 1%;
+}
+
+.contact-me {
+  margin-top: 0;
 }

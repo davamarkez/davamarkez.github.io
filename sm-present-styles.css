@@ -43,6 +43,12 @@
   padding-bottom: 50%;
 }
 
+.first-screen .logo {
+  width: 15.81%;
+  height: auto;
+  max-width: 144px;
+}
+
 /* Content */
 
 div.image-with-header::before {
@@ -115,4 +121,34 @@ div.sm-with-stripes::after {
   margin-top: 16.8%;
   background-image: url('img/sm/sm_right_stripe.png');
   background-position: left top;
+}
+
+.sm-certificates,
+.sm-print {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.sm-certificates {
+  justify-content: space-between;
+}
+
+.sm-print {
+  margin-top: 4.4%;
+}
+
+.sm-certificates img,
+.sm-print img {
+  width: 100%;
+}
+
+.sm-certificates div,
+.sm-print div:first-of-type {
+  flex-basis: 30.75%;
+}
+
+.sm-print div:last-of-type {
+  flex-basis: 43.56%;
+  margin-left: 3.88%;
 }

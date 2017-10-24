@@ -33,6 +33,12 @@
   border-image-slice: 1;
 }
 
+.first-screen .logo {
+  width: 14.78%;
+  height: auto;
+  max-width: 101px;
+}
+
 /* Content */
 
 div.image-with-header::before {

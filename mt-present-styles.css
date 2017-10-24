@@ -3,6 +3,24 @@
 .first-screen {
   color: #424242;
   background-color: #fdfaf5;
+  background-image: url('img/mt/mt_pattern.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 100%;
+  width: 100%;
+}
+
+.first-screen .logo {
+  width: 18.12%;
+  height: auto;
+  max-width: 165px;
+}
+
+.mt-stripe-container {
+  background-image: url('img/mt/mt_pattern.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 100%;
 }
 
 
@@ -104,32 +122,33 @@ ul.list-with-dashes {
 
 .mt-awards {
   padding-top: 4.4%;
+  padding-bottom: 4.4%;
   color: #424242;
   background: #bdbdbd;
 }
-/*
-.mt-awards .container div:first-of-type {
-  float: left;
-  width: 20%;
-}
-*/
-.mt-awards div[class^="awards-"] {
+
+.mt-awards div[class^="awards-"],
+.mt-awards div[class^="posters-"] {
   display: flex;
   flex-direction: row;
   width: 100%;
   margin-bottom: 4.4%;
 }
 
-.mt-awards div[class^="awards-"] div {
+.mt-awards div[class^="awards-"] div,
+.mt-awards div[class^="posters-"] div {
   margin-right: 1%;
 }
 
-.mt-awards div[class^="awards-"] div:last-of-type {
+.mt-awards div[class^="awards-"] div:last-of-type,
+.mt-awards div[class^="posters-"] div:last-of-type {
   margin-right: 0;
 }
 
 .mt-awards div.awards-student-1,
-.mt-awards div.awards-student-3 {
+.mt-awards div.awards-student-3,
+.mt-awards div.posters-1,
+.mt-awards div.posters-2 {
   justify-content: flex-end;
 }
 
@@ -146,21 +165,32 @@ ul.list-with-dashes {
   flex-basis: 31%;
 }
 
-.mt-awards div[class^="awards-"] img {
+.mt-awards div.posters-1 .img-vert {
+  flex-basis: 31.11%;
+}
+
+.mt-awards div.posters-2 .img-vert {
+  flex-basis: 24.15%;
+}
+
+.mt-awards img {
   width: 100%;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
-.mt-awards div.awards-student-1 div {
+.mt-awards div.awards-student-1 div,
+.mt-awards div.posters-1 div {
   flex-shrink: 0;
 }
 
-.mt-awards div.awards-student-1 div:first-of-type {
+.mt-awards div.awards-student-1 div:first-of-type,
+.mt-awards div.posters-1 div:first-of-type {
   flex-shrink: 1;
   padding-right: 3%;
 }
 
-.mt-awards div.awards-student-1 h2 {
+.mt-awards div.awards-student-1 h2,
+.mt-awards div.posters-1 h2 {
   margin: 0;
   margin-top: -3%;
 }
@@ -173,4 +203,12 @@ ul.list-with-dashes {
 
 .mt-awards div.awards-curator p {
   margin-top: -2%;
+}
+
+.mt-awards div.posters-1 {
+  margin-top: 10%;
+}
+
+.contact-me {
+  margin-top: 0;
 }

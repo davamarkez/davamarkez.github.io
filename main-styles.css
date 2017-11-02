@@ -14,10 +14,12 @@ body {
 
 h1 {
   font-weight: normal;
+  margin: 3% 0 2% 0;
 }
 
 h1 img {
   vertical-align: middle;
+  padding: 0 0.25em;
 }
 
 .portfolio-grid {
@@ -132,7 +134,7 @@ h1 img {
 .contact-me p {
   display: inline-block;
   margin: 0;
-  margin-right: 3%;
+  margin-right: 2%;
   margin-bottom: 0.5%;
 }
 
